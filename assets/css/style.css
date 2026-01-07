@@ -318,6 +318,16 @@ button {
   button {
     padding: 15px 30px;
   }
+
+  /* i bottoni a lato pagina vanno vicino
+    all'inizio della pagina */
+  .bottone-lato-pagina.social {
+    top: 20px;
+  }
+
+  .bottone-lato-pagina.calendario {
+    top: 140px;
+  }
 }
 
 /* ELEMENTI NELL' ASIDE */
@@ -377,16 +387,6 @@ footer a {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  /* i bottoni a lato pagina vanno vicino
-    all'inizio della pagina */
-  .bottone-lato-pagina.social {
-    top: 20px;
-  }
-
-  .bottone-lato-pagina.calendario {
-    top: 140px;
   }
 }
 
@@ -450,6 +450,7 @@ section.novita > h2 {
   right: -15px;
   /* text-align: center; */
   padding: auto;
+  z-index: 1;
 }
 
 .bottone-lato-pagina .icon {
@@ -479,4 +480,20 @@ section.novita > h2 {
 .bottone-lato-pagina.calendario {
   bottom: 250px;
   color: orange;
+}
+
+/* ARTICOLI CORRELATI */
+
+main > aside > div {
+  position: relative;
+}
+
+/* ICONA TAG PER ARTICOLO CORRELATO */
+
+main > aside .icona-tag {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 4rem;
+  opacity: 0.1;
 }
