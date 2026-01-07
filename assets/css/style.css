@@ -51,7 +51,7 @@ header {
     display: inline-block;
   }
 
-  header .brand {
+  header .brand { 
     width: 75%;
   }
   header .brand img {
@@ -137,6 +137,26 @@ h1 + p {
   color: #a0a0a0;
 }
 
+h1 {
+}
+
+/* UNDERLINE IMG IN "template per i post" */
+h1 span.underline {
+  position: relative;
+  white-space: nowrap;
+}
+
+h1 span.underline img {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  opacity: 0.75;
+  z-index: 0;
+  width: 98%;
+}
+
+
+
 @media screen and (max-width: 499px) {
   p,
   ul,
@@ -187,6 +207,7 @@ h1 + p {
   border: 4px solid #00a0c6;
   outline: 4px solid #a02571;
   padding: 3px;
+  float: left;
 }
 ul,
 ol {
