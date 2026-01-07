@@ -170,6 +170,10 @@ h1 span.underline img {
     font-size: 1.8rem;
     font-weight: 700;
   }
+  /* come create un template per i post, titolo */
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -455,7 +459,7 @@ section.novita > h2 {
 
 .bottone-lato-pagina > .sfondo {
   position: absolute;
-  opacity: .8;
+  opacity: 0.8;
   z-index: -1;
   border-radius: 3%;
   width: 100%;
@@ -467,7 +471,6 @@ section.novita > h2 {
   -moz-box-shadow: 4px 6px 5px 2px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(5px); */
 }
-
 
 .bottone-lato-pagina.blue {
   color: blue;
