@@ -438,21 +438,36 @@ section.novita > h2 {
 
 .bottone-lato-pagina {
   position: fixed;
-  border: 5px solid white;
-  /* background-color:white; */
-  opacity: .7;
-  border-radius: 1rem;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   /* makes the box go to the far right, 
   hiding a small part of the far-right box */
   right: -15px;
-  padding: auto;
   z-index: 1;
-  
-  box-shadow: 2px 2px 1px 3px rgb(226, 226, 226);
-  background-color: rgba(255, 255, 255, 0.846);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10%;
+  cursor: pointer;
 }
+
+.bottone-lato-pagina:hover {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+.bottone-lato-pagina > .sfondo {
+  position: absolute;
+  opacity: .8;
+  z-index: -1;
+  border-radius: 3%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 253, 253, 0.9);
+  /* box shadow */
+  box-shadow: 4px 6px 5px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 4px 6px 5px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 4px 6px 5px 2px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(5px); */
+}
+
 
 .bottone-lato-pagina.blue {
   color: blue;
@@ -462,24 +477,23 @@ section.novita > h2 {
   color: orange;
 }
 
-.bottone-lato-pagina .icon {
-  font-size: 3.5rem;
+.bottone-lato-pagina > .icona {
+  font-size: 3rem;
   position: absolute;
-  top: 15px;
-  right: 20px;
-  opacity: 1;
+  top: 13px;
+  right: 15px;
 }
 
 .bottone-lato-pagina.torna-su {
-  bottom: 30px;
+  bottom: 20px;
 }
 
 .bottone-lato-pagina.social {
-  bottom: 150px;
+  bottom: 110px;
 }
 
 .bottone-lato-pagina.calendario {
-  bottom: 270px;
+  bottom: 200px;
 }
 
 /* ARTICOLI CORRELATI */
